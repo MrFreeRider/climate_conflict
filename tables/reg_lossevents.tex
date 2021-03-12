@@ -1,0 +1,37 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+            &\multicolumn{1}{c}{lossevents}&\multicolumn{1}{c}{lossevents}&\multicolumn{1}{c}{lossevents}&\multicolumn{1}{c}{lossevents}&\multicolumn{1}{c}{loss\_lds}&\multicolumn{1}{c}{loss\_lds}\\
+\hline
+main        &                     &                     &                     &                     &                     &                     \\
+ndvi\_zyd    &      0.0488         &      0.0552         &                     &                     &                     &                     \\
+            &      (1.20)         &      (1.36)         &                     &                     &                     &                     \\
+[1em]
+ndvi\_zldsd  &                     &                     &                     &                     &      -0.183\sym{***}&                     \\
+            &                     &                     &                     &                     &     (-4.38)         &                     \\
+[1em]
+droughtyd   &                     &                     &       0.302\sym{***}&       0.303\sym{***}&                     &                     \\
+            &                     &                     &      (5.58)         &      (5.60)         &                     &                     \\
+[1em]
+droughtldsd &                     &                     &                     &                     &                     &      -0.111         \\
+            &                     &                     &                     &                     &                     &     (-0.74)         \\
+[1em]
+1.ibli      &                     &      0.0918\sym{**} &                     &      0.0911\sym{**} &       0.113\sym{*}  &       0.126\sym{*}  \\
+            &                     &      (3.04)         &                     &      (3.03)         &      (2.06)         &      (2.25)         \\
+[1em]
+2.ibli      &                     &      0.0601         &                     &      0.0562         &       0.109         &       0.126         \\
+            &                     &      (0.79)         &                     &      (0.74)         &      (0.65)         &      (0.74)         \\
+[1em]
+3.ibli      &                     &      0.0294         &                     &      0.0136         &      -0.242\sym{***}&      -0.178\sym{***}\\
+            &                     &      (1.15)         &                     &      (0.56)         &     (-4.86)         &     (-3.72)         \\
+\hline
+N           &        4258         &        4258         &        4258         &        4258         &        4210         &        4210         \\
+N\_g         &         923         &         923         &         923         &         923         &         907         &         907         \\
+chi2        &       358.1         &       359.0         &       385.5         &       386.3         &       487.5         &       469.5         \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}
